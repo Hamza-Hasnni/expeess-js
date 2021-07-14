@@ -3,7 +3,7 @@ const day = date.getUTCDay();
 const hours = date.getUTCHours();
 
 const isWorking = (req, res, next) => {
-  if ((day != 6 && day != 7)  && ( hours >=9 ||  17 <= hours ) ) {
+  if ((day != 6 && day != 7)) {
     next();
     
   } else {
